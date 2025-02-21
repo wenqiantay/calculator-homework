@@ -1,10 +1,11 @@
+/* Flexbox setup to center items */
 .frame {
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 
+/* Button with image setup */
 .button-with-img img {
     width: 100%; 
     height: 100%; 
@@ -12,54 +13,99 @@
 }
 
 .button-with-img {
-    width: 88px; 
-    height: 88px; 
+    width: 20vw; /* Adjust width relative to viewport */
+    height: 20vw; /* Adjust height relative to viewport */
+    max-width: 88px; /* Set a maximum size for larger screens */
+    max-height: 88px; /* Set a maximum size for larger screens */
     padding: 0; 
     border: 2px solid #ccc; 
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center; 
-    background-color: #f0f0f0 ;
+    background-color: #f0f0f0;
 }
 
+/* Button container */
 #buttons {
-    margin-top: 30px;
+    margin-top: 5vw; /* Make it responsive using viewport width */
 }
 
-
+/* Heading style */
 h2 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    font-size: 2vw; /* Adjust font size based on viewport width */
 }
 
+/* Display area */
 .display {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid white;
-    width: 300px;
+    width: 80%; /* 80% of the parent container */
+    max-width: 300px; /* Set a max-width to prevent it from growing too large */
     height: 50px;
-    margin-left: 600px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     background-color: white;
-
 }
 
+/* Input field styling */
 input[type="number"] {
-    width: 300px; 
+    width: 80%; /* Responsive width */
+    max-width: 300px; /* Maximum width */
     height: 50px; 
-    font-size: 20px; 
+    font-size: 1.5vw; /* Make font size responsive */
     padding: 10px; 
     border: 2px solid #ccc; 
     border-radius: 5px; 
     box-sizing: border-box; 
 }
 
-/* Custom styling to remove number arrows in some browsers (like Chrome) */
+/* Remove number arrows in some browsers */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .button-with-img {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .display {
+        width: 90%; /* Increase the display area on smaller screens */
+        max-width: 90%;
+    }
+
+    input[type="number"] {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 4vw; /* Increase font size on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .button-with-img {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    h2 {
+        font-size: 5vw; /* Adjust font size even more for very small screens */
+    }
+
+    .display {
+        width: 95%; /* More flexibility on very small screens */
+        max-width: 95%;
+    }
 }

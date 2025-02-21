@@ -67,6 +67,12 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "allowedHosts": [
+              "renewed-inspiration-production.up.railway.app",
+              "localhost"
+            ]
+          },
           "configurations": {
             "production": {
               "buildTarget": "calculator-app:build:production"
