@@ -1,0 +1,65 @@
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.button-with-img img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;
+}
+
+.button-with-img {
+    width: 88px; 
+    height: 88px; 
+    padding: 0; 
+    border: 2px solid #ccc; 
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #f0f0f0 ;
+}
+
+#buttons {
+    margin-top: 30px;
+}
+
+
+h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 300px;
+    height: 50px;
+    margin-left: 600px;
+    text-align: center;
+    background-color: white;
+
+}
+
+input[type="number"] {
+    width: 300px; 
+    height: 50px; 
+    font-size: 20px; 
+    padding: 10px; 
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+}
+
+/* Custom styling to remove number arrows in some browsers (like Chrome) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

@@ -1,0 +1,66 @@
+<h2>MY CALCULATOR APP</h2>
+
+<div class="display">
+  {{ displayval }}
+</div>
+
+<div class="frame">
+  <table id="buttons" >
+    <tr>
+      <td>
+        <button type="button" class="button-with-img" (click)="numClick('1')"><img src="/buttons/button-1.png"></button>
+      </td>
+      <td>
+        <button type="button" class="button-with-img" (click)="numClick('2')"><img src="/buttons/button-2.png"></button>
+      </td>
+      <td>
+        <button type="button" class="button-with-img" (click)="numClick('3')"><img src="/buttons/button-3.png"></button>
+      </td>
+      <td>
+        <button type="button" class="button-with-img" (click)="operator('d')"><img src="/buttons/button-divide.png"></button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button type="button" class="button-with-img" (click)="numClick('4')"><img src="/buttons/button-4.png"></button>
+      </td>
+      <td>
+        <button type="button" class="button-with-img" (click)="numClick('5')"><img src="/buttons/button-5.png"></button>
+      </td>
+      <td>
+        <button type="button" class="button-with-img" (click)="numClick('6')"><img src="/buttons/button-6.png"></button>
+      </td>
+      <td>
+        <button type="button" class="button-with-img" (click)="operator('m')"><img src="/buttons/button-multiply.png"></button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button type="button" class="button-with-img" (click)="numClick('7')"><img src="/buttons/button-7.png"></button>
+      </td>
+      <td>
+        <button type="button" class="button-with-img" (click)="numClick('8')"><img src="/buttons/button-8.png"></button>
+      </td>
+      <td>
+        <button type="button" class="button-with-img" (click)="numClick('9')"><img src="/buttons/button-9.png"></button>
+      </td>
+      <td>
+        <button type="button" class="button-with-img" (click)="operator('s')"><img src="/buttons/button-minus.png"></button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button type="button" class="button-with-img" (click)="clear()"><img src="/buttons/button-clear.png"></button>
+      </td>
+      <td>
+        <button type="button" class="button-with-img" (click)="numClick('0')"><img src="/buttons/button-0.png"></button>
+      </td>
+      <td>
+        <button type="button" class="button-with-img" (click)="calculate()"><img src="/buttons/button-equal.png"></button>
+      </td>
+      <td>
+        <button type="button" class="button-with-img" (click)="operator('a')"><img src="/buttons/button-plus.png"></button>
+      </td>
+    </tr>
+  </table>
+</div>
